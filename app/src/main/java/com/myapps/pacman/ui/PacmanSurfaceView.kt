@@ -1272,7 +1272,7 @@ class PacmanSurfaceView(
     // ===========================================
     private fun drawMultiInstanceStartScreen(canvas: Canvas, width: Float, height: Float) {
         canvas.drawRect(0f, 0f, width, height, emptySpace)
-        canvas.drawText("Health Pac-Man", width / 2f, 200f, tittleMainScreen)
+        canvas.drawText("NutriMaze – Man", width / 2f, 200f, tittleMainScreen)
         canvas.drawText("Gesek layar untuk bergerak", width / 2f, height / 2f + 25f, textMainScreenPaint)
 
         // Enhanced info tentang sistem makanan multi-instance dinamis
