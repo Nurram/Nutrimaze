@@ -1276,21 +1276,21 @@ class PacmanSurfaceView(
         canvas.drawText("Gesek layar untuk bergerak", width / 2f, height / 2f + 25f, textMainScreenPaint)
 
         // Enhanced info tentang sistem makanan multi-instance dinamis
-        val infoY = height / 2f + 100f
-        canvas.drawText("Sistem Multi-Instance Dinamis:", width / 2f, infoY, healthInfoPaint)
-        canvas.drawText("✨ Level 1: 4 makanan → Level 5: 20 makanan! ✨", width / 2f, infoY + 40f, healthInfoPaint)
-        canvas.drawText("🔄 Same-type respawn untuk semua makanan", width / 2f, infoY + 80f, healthInfoPaint)
-        canvas.drawText("🌈 Beragam jenis makanan spawn bersamaan", width / 2f, infoY + 120f, healthInfoPaint)
-        canvas.drawText("⚖️ Jaga keseimbangan gizi sesuai Isi Piringku", width / 2f, infoY + 160f, healthInfoPaint)
-        canvas.drawText("🚫 Hindari Makanan Tidak Sehat (Junk Food)!", width / 2f, infoY + 200f, warningPaint)
-
-        // Add level progression info
-        canvas.drawText("Progresi Level:", width / 2f, infoY + 260f, healthInfoPaint)
-        canvas.drawText("L1: Nasi+Ikan+Bayam+Apel", width / 2f, infoY + 290f, textMainScreenPaint)
-        canvas.drawText("L2: +Ubi+Ayam+Brokoli+Pisang", width / 2f, infoY + 320f, textMainScreenPaint)
-        canvas.drawText("L3: +Kentang+Tempe+Wortel+Jeruk", width / 2f, infoY + 350f, textMainScreenPaint)
-        canvas.drawText("L4: +Singkong+Tahu+Kangkung+Pepaya", width / 2f, infoY + 380f, textMainScreenPaint)
-        canvas.drawText("L5: +Jagung+Kacang+Sawi+Mangga", width / 2f, infoY + 410f, textMainScreenPaint)
+//        val infoY = height / 2f + 100f
+//        canvas.drawText("Sistem Multi-Instance Dinamis:", width / 2f, infoY, healthInfoPaint)
+//        canvas.drawText("✨ Level 1: 4 makanan → Level 5: 20 makanan! ✨", width / 2f, infoY + 40f, healthInfoPaint)
+//        canvas.drawText("🔄 Same-type respawn untuk semua makanan", width / 2f, infoY + 80f, healthInfoPaint)
+//        canvas.drawText("🌈 Beragam jenis makanan spawn bersamaan", width / 2f, infoY + 120f, healthInfoPaint)
+//        canvas.drawText("⚖️ Jaga keseimbangan gizi sesuai Isi Piringku", width / 2f, infoY + 160f, healthInfoPaint)
+//        canvas.drawText("🚫 Hindari Makanan Tidak Sehat (Junk Food)!", width / 2f, infoY + 200f, warningPaint)
+//
+//        // Add level progression info
+//        canvas.drawText("Progresi Level:", width / 2f, infoY + 260f, healthInfoPaint)
+//        canvas.drawText("L1: Nasi+Ikan+Bayam+Apel", width / 2f, infoY + 290f, textMainScreenPaint)
+//        canvas.drawText("L2: +Ubi+Ayam+Brokoli+Pisang", width / 2f, infoY + 320f, textMainScreenPaint)
+//        canvas.drawText("L3: +Kentang+Tempe+Wortel+Jeruk", width / 2f, infoY + 350f, textMainScreenPaint)
+//        canvas.drawText("L4: +Singkong+Tahu+Kangkung+Pepaya", width / 2f, infoY + 380f, textMainScreenPaint)
+//        canvas.drawText("L5: +Jagung+Kacang+Sawi+Mangga", width / 2f, infoY + 410f, textMainScreenPaint)
     }
 
     // ===========================================
