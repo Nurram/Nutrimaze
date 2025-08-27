@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Original colors -->
+    <color name="pink">#FFFF69B4</color>
+    <color name="orange">#FFFF8C00</color>
+    <color name="lightBlue">#FF00BFFF</color>
+    <color name="darkBlue">#FF0000CD</color>
+
+    <!-- Level colors -->
+    <color name="levelOne">#FF4CAF50</color>
+    <color name="levelTwo">#FFFF9800</color>
+    <color name="levelThree">#FF2196F3</color>
+    <color name="levelFour">#FF9C27B0</color>
+    <color name="levelFive">#FFFF5722</color>
+    <color name="levelSix">#FF795548</color>
+    <color name="levelSeven">#FF607D8B</color>
+    <color name="levelEight">#FFE91E63</color>
+    <color name="levelNine">#FF673AB7</color>
+
+    <!-- Transparency -->
+    <color name="transparentBlack">#99000000</color>
+    <color name="littleTransparentBlack">#CC000000</color>
+
+    <!-- Premium theme colors -->
+    <color name="premium_background">#FF0A0A0A</color>
+    <color name="premium_gold">#FFFFD700</color>
+    <color name="premium_dark_gold">#FFCC9900</color>
+    <color name="premium_accent">#FF00E5FF</color>
+    <color name="premium_dark_accent">#FF00B2CC</color>
+    <color name="tutorial_background">#CC000000</color>
+    <color name="game_background">#FF050505</color>
+    <color name="wall_color">#FF2979FF</color>
+
+    <!-- Beautiful card colors -->
+    <color name="premium_card_background">#FF1A1A1A</color>
+    <color name="controls_background">#FF1E1E1E</color>
+    <color name="target_info_background">#FF232323</color>
+
+    <!-- Food card backgrounds -->
+    <color name="rice_card_background">#FF2A1810</color>
+    <color name="fish_card_background">#FF0F1B2A</color>
+    <color name="vegetable_card_background">#FF0F2A0F</color>
+    <color name="fruit_card_background">#FF2A1A0F</color>
+
+    <!-- Quiz colors -->
+    <color name="correct_answer">#FF4CAF50</color>
+    <color name="wrong_answer">#FFF44336</color>
+</resources>

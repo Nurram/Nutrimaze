@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PacmanTheme">
+        <attr name="gameBackground" format="color" />
+        <attr name="wallColor" format="color" />
+    </declare-styleable>
+</resources>

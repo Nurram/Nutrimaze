@@ -1,0 +1,191 @@
+<resources>
+    <!-- App Info -->
+    <string name="app_name">Health Pac-Man</string>
+
+    <!-- Button Texts -->
+    <string name="use_direction_buttons">Gunakan Tombol Arah</string>
+    <string name="button_up">Atas</string>
+    <string name="button_down">Bawah</string>
+    <string name="button_left">Kiri</string>
+    <string name="button_right">Kanan</string>
+    <string name="start">Mulai</string>
+    <string name="reset">Reset</string>
+    <string name="pause">Jeda</string>
+    <string name="resume">Lanjut</string>
+    <string name="sound_on">Suara Hidup</string>
+    <string name="sound_off">Suara Mati</string>
+    <string name="swipe_to_control">Gesek untuk Mengontrol</string>
+    <string name="tap_to_continue">Ketuk untuk melanjutkan</string>
+    <string name="mulai_bermain">Mulai Bermain</string>
+    <string name="scroll_untuk_melanjutkan">Gulir sampai bawah untuk melanjutkan</string>
+    <string name="main_lagi">Main Lagi</string>
+    <string name="kembali_ke_menu">Kembali ke Menu</string>
+
+    <!-- Isi Piringku Content - Updated dengan Dynamic System -->
+    <string name="isi_piringku_title">Isi Piringku - Sistem Makanan Dinamis</string>
+    <string name="isi_piring_intro">"Isi Piringku" adalah pedoman yang dikembangkan oleh Kementerian Kesehatan untuk mendorong masyarakat mengonsumsi makanan sesuai prinsip gizi seimbang. Dalam game ini, setiap level memiliki variasi makanan yang berbeda untuk memberikan edukasi yang lebih kaya tentang keanekaragaman pangan Indonesia.</string>
+
+    <!-- Makanan Pokok - Dynamic System -->
+    <string name="makanan_pokok_title">1. Makanan Pokok (Karbohidrat) - Sistem Dinamis</string>
+    <string name="makanan_pokok_desc">Makanan pokok mengandung karbohidrat sebagai sumber tenaga. Dalam game, setiap level menampilkan variasi makanan pokok yang berbeda:
+    \n• Level 1: Nasi
+    \n• Level 2: Nasi + Ubi
+    \n• Level 3: Nasi + Ubi + Kentang
+    \n• Level 4: Nasi + Ubi + Kentang + Singkong
+    \n• Level 5: Nasi + Ubi + Kentang + Singkong + Jagung
+    \n\nKonsumsi maksimal: 4 porsi per hari</string>
+
+    <!-- Lauk Pauk - Dynamic System -->
+    <string name="lauk_pauk_title">2. Lauk Pauk (Protein) - Sistem Dinamis</string>
+    <string name="lauk_pauk_desc">Lauk pauk mengandung protein sebagai zat pembangun tubuh. Setiap level menampilkan variasi protein yang berbeda:
+    \n• Level 1: Ikan
+    \n• Level 2: Ikan + Ayam
+    \n• Level 3: Ikan + Ayam + Tempe
+    \n• Level 4: Ikan + Ayam + Tempe + Tahu
+    \n• Level 5: Ikan + Ayam + Tempe + Tahu + Kacang
+    \n\nKonsumsi maksimal: 3 porsi per hari</string>
+
+    <!-- Sayur - Dynamic System -->
+    <string name="sayur_title">3. Sayuran - Sistem Dinamis</string>
+    <string name="sayur_desc">Sayuran mengandung vitamin dan mineral sebagai zat pengatur tubuh. Setiap level menampilkan variasi sayuran yang berbeda:
+    \n• Level 1: Bayam
+    \n• Level 2: Bayam + Brokoli
+    \n• Level 3: Bayam + Brokoli + Wortel
+    \n• Level 4: Bayam + Brokoli + Wortel + Kangkung
+    \n• Level 5: Bayam + Brokoli + Wortel + Kangkung + Sawi
+    \n\nKonsumsi maksimal: 4 porsi per hari</string>
+
+    <!-- Buah - Dynamic System -->
+    <string name="buah_title">4. Buah-Buahan - Sistem Dinamis</string>
+    <string name="buah_desc">Buah-buahan mengandung vitamin dan mineral sebagai zat pengatur tubuh. Setiap level menampilkan variasi buah yang berbeda:
+    \n• Level 1: Apel
+    \n• Level 2: Apel + Pisang
+    \n• Level 3: Apel + Pisang + Jeruk
+    \n• Level 4: Apel + Pisang + Jeruk + Pepaya
+    \n• Level 5: Apel + Pisang + Jeruk + Pepaya + Mangga
+    \n\nKonsumsi maksimal: 3 porsi per hari</string>
+
+    <!-- Dynamic Food Names -->
+    <string name="food_category_carbs">Makanan Pokok</string>
+    <string name="food_category_protein">Lauk Pauk</string>
+    <string name="food_category_vegetables">Sayuran</string>
+    <string name="food_category_fruits">Buah-buahan</string>
+
+    <!-- Individual Food Names -->
+    <!-- Karbohidrat -->
+    <string name="food_nasi">Nasi</string>
+    <string name="food_ubi">Ubi</string>
+    <string name="food_kentang">Kentang</string>
+    <string name="food_singkong">Singkong</string>
+    <string name="food_jagung">Jagung</string>
+
+    <!-- Protein -->
+    <string name="food_ikan">Ikan</string>
+    <string name="food_ayam">Ayam</string>
+    <string name="food_tempe">Tempe</string>
+    <string name="food_tahu">Tahu</string>
+    <string name="food_kacang">Kacang</string>
+
+    <!-- Sayuran -->
+    <string name="food_bayam">Bayam</string>
+    <string name="food_brokoli">Brokoli</string>
+    <string name="food_wortel">Wortel</string>
+    <string name="food_kangkung">Kangkung</string>
+    <string name="food_sawi">Sawi</string>
+
+    <!-- Buah -->
+    <string name="food_apel">Apel</string>
+    <string name="food_pisang">Pisang</string>
+    <string name="food_jeruk">Jeruk</string>
+    <string name="food_pepaya">Pepaya</string>
+    <string name="food_mangga">Mangga</string>
+
+    <!-- Junk Food Warning -->
+    <string name="junk_food_title">Hindari Junk Food</string>
+    <string name="junk_food_desc">Selain itu, masyarakat juga didorong untuk membatasi konsumsi makanan yang asin, manis, dan berlemak, seperti junkfood. Junkfood merupakan makanan yang tidak mengandung gizi yang baik untuk pertumbuhan dan perkembangan tubuh. Contohnya adalah burger, gorengan, nugget, sosis, ayam goreng, dan yang lainnya.</string>
+
+    <!-- Game Instructions - Updated -->
+    <string name="game_instructions_title">Cara Bermain - Sistem Dinamis</string>
+    <string name="game_instructions_desc">Dalam game ini, kamu akan menjadi Pac-Man yang harus mengonsumsi makanan sehat sesuai dengan panduan Isi Piringku. Setiap level memiliki variasi makanan yang berbeda! Hindari junk food (hantu) dan konsumsi makanan sehat dengan porsi yang tepat untuk naik level!</string>
+
+    <!-- Dynamic Game Info -->
+    <string name="dynamic_food_info">Sistem Makanan Dinamis:</string>
+    <string name="level_food_variety">Setiap level memiliki variasi makanan yang berbeda!</string>
+    <string name="food_limits_dynamic">Batas Konsumsi: Karbohidrat (4), Protein (3), Sayuran (4), Buah (3)</string>
+    <string name="same_type_respawn">Makan makanan yang sama akan spawn ulang di tempat lain</string>
+    <string name="multi_food_spawn">Beberapa jenis makanan spawn bersamaan di setiap level</string>
+
+    <!-- Level Specific Info -->
+    <string name="level_1_foods">Level 1: 4 jenis makanan (Nasi, Ikan, Bayam, Apel)</string>
+    <string name="level_2_foods">Level 2: 8 jenis makanan</string>
+    <string name="level_3_foods">Level 3: 12 jenis makanan</string>
+    <string name="level_4_foods">Level 4: 16 jenis makanan</string>
+    <string name="level_5_foods">Level 5: 20 jenis makanan</string>
+
+    <!-- Score Activity - Updated -->
+    <string name="game_selesai">Permainan Selesai</string>
+    <string name="selamat_menang">Selamat! Kamu Menang!</string>
+    <string name="skor_akhir">Skor Akhir: %d</string>
+    <string name="level_tercapai">Level Tercapai: %d</string>
+    <string name="statistik_konsumsi">Statistik Konsumsi - Sistem Dinamis</string>
+
+    <!-- Updated Score Strings -->
+    <string name="makanan_pokok_dimakan">🍚 Makanan Pokok: %d/%d porsi</string>
+    <string name="lauk_pauk_dimakan">🥩 Lauk Pauk: %d/%d porsi</string>
+    <string name="sayur_dimakan">🥬 Sayuran: %d/%d porsi</string>
+    <string name="buah_dimakan">🍎 Buah-buahan: %d/%d porsi</string>
+
+    <!-- Legacy Compatibility -->
+    <string name="nasi_dimakan">🍚 Nasi: %d/%d porsi</string>
+    <string name="ikan_dimakan">🐟 Ikan: %d/%d porsi</string>
+
+    <!-- Dynamic Score Breakdown -->
+    <string name="detail_karbohidrat">Karbohidrat yang dikonsumsi:</string>
+    <string name="detail_protein">Protein yang dikonsumsi:</string>
+    <string name="detail_sayuran">Sayuran yang dikonsumsi:</string>
+    <string name="detail_buah">Buah yang dikonsumsi:</string>
+
+    <!-- Evaluation Messages -->
+    <string name="evaluasi">Evaluasi Gizi Seimbang</string>
+    <string name="evaluasi_sempurna">Sempurna! Kamu menerapkan prinsip Isi Piringku dengan baik!</string>
+    <string name="evaluasi_baik">Bagus! Konsumsi makanan sudah cukup seimbang.</string>
+    <string name="evaluasi_berlebihan">Perhatikan konsumsi berlebihan pada beberapa kategori makanan.</string>
+    <string name="evaluasi_kurang_variasi">Coba variasikan makanan dari semua kategori Isi Piringku.</string>
+
+    <!-- Achievement Messages -->
+    <string name="achievement_food_variety">🌈 Variasi Makanan Baik!</string>
+    <string name="achievement_balanced_diet">⚖️ Pola Makan Seimbang!</string>
+    <string name="achievement_no_excess">✅ Tidak Ada Konsumsi Berlebihan!</string>
+    <string name="achievement_all_categories">🏆 Semua Kategori Makanan Terpenuhi!</string>
+
+    <!-- Warning Messages -->
+    <string name="warning_excess_carbs">⚠️ Karbohidrat berlebihan</string>
+    <string name="warning_excess_protein">⚠️ Protein berlebihan</string>
+    <string name="warning_excess_vegetables">⚠️ Sayuran berlebihan</string>
+    <string name="warning_excess_fruits">⚠️ Buah berlebihan</string>
+
+    <!-- Dynamic Tutorial -->
+    <string name="tutorial_dynamic_system">Sistem Makanan Dinamis</string>
+    <string name="tutorial_level_progression">Setiap level menambah variasi makanan baru!</string>
+    <string name="tutorial_same_type_respawn">Makan satu jenis makanan akan menspawn makanan yang sama di tempat lain</string>
+    <string name="tutorial_multiple_spawn">Beberapa jenis makanan akan spawn bersamaan</string>
+    <string name="tutorial_food_tracking">Game melacak setiap jenis makanan yang kamu konsumsi</string>
+
+    <!-- Progress Indicators -->
+    <string name="progress_karbohidrat">Karbohidrat: %d/%d</string>
+    <string name="progress_protein">Protein: %d/%d</string>
+    <string name="progress_sayuran">Sayuran: %d/%d</string>
+    <string name="progress_buah">Buah: %d/%d</string>
+
+    <!-- Target Achievement -->
+    <string name="target_achieved">🎯 Target Nutrisi Tercapai!</string>
+    <string name="target_karbohidrat">Target Karbohidrat: 3 porsi</string>
+    <string name="target_protein">Target Protein: 2 porsi</string>
+    <string name="target_sayuran">Target Sayuran: 3 porsi</string>
+    <string name="target_buah">Target Buah: 2 porsi</string>
+
+    <!-- Food Spawning Messages -->
+    <string name="food_spawned">%s baru muncul!</string>
+    <string name="multiple_foods_spawned">%d jenis makanan muncul di level ini!</string>
+    <string name="food_respawned">%s spawn ulang di tempat baru!</string>
+</resources>

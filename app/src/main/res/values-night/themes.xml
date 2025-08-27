@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.PacmanPremium" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/premium_gold</item>
+        <item name="colorPrimaryVariant">@color/premium_dark_gold</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/premium_accent</item>
+        <item name="colorSecondaryVariant">@color/premium_dark_accent</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+        <!-- Window background -->
+        <item name="android:windowBackground">@color/premium_background</item>
+
+        <!-- Custom game elements -->
+        <item name="gameBackground">@color/game_background</item>
+        <item name="wallColor">@color/wall_color</item>
+    </style>
+</resources>

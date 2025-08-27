@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/tutorial_buttons.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Latar belakang lingkaran -->
+    <path
+        android:pathData="M100,100m-80,0a80,80 0,1 1,160 0a80,80 0,1 1,-160 0"
+        android:strokeWidth="2"
+        android:fillColor="#33FFFFFF"
+        android:strokeColor="#FFFFFF"/>
+
+    <!-- Tombol atas -->
+    <path
+        android:pathData="M85,60l30,0l0,30l-30,0z"
+        android:strokeWidth="2"
+        android:fillColor="#44FFD700"
+        android:strokeColor="#FFD700"/>
+    <path
+        android:pathData="M100,70l-7,10l14,0z"
+        android:fillColor="#FFD700"/>
+
+    <!-- Tombol kiri -->
+    <path
+        android:pathData="M55,85l30,0l0,30l-30,0z"
+        android:strokeWidth="2"
+        android:fillColor="#44FFD700"
+        android:strokeColor="#FFD700"/>
+    <path
+        android:pathData="M65,100l10,-7l0,14z"
+        android:fillColor="#FFD700"/>
+
+    <!-- Tombol kanan -->
+    <path
+        android:pathData="M115,85l30,0l0,30l-30,0z"
+        android:strokeWidth="2"
+        android:fillColor="#44FFD700"
+        android:strokeColor="#FFD700"/>
+    <path
+        android:pathData="M135,100l-10,-7l0,14z"
+        android:fillColor="#FFD700"/>
+
+    <!-- Tombol bawah -->
+    <path
+        android:pathData="M85,115l30,0l0,30l-30,0z"
+        android:strokeWidth="2"
+        android:fillColor="#44FFD700"
+        android:strokeColor="#FFD700"/>
+    <path
+        android:pathData="M100,135l7,-10l-14,0z"
+        android:fillColor="#FFD700"/>
+</vector>
