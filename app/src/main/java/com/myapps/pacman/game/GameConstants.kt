@@ -13,10 +13,10 @@ object GameConstants {
     const val PACMAN_LIVES = 3
 
     // Tambahkan konstanta untuk batasan makanan
-    const val MAX_RICE_PORTION = 4
-    const val MAX_FISH_PORTION = 4
-    const val MAX_VEGETABLE_PORTION = 4
-    const val MAX_FRUIT_PORTION = 3
+    const val MAX_RICE_PORTION = 5
+    const val MAX_FISH_PORTION = 3
+    const val MAX_VEGETABLE_PORTION = 3
+    const val MAX_FRUIT_PORTION = 4
 
     // Konstanta untuk karakter di map (legacy - backwards compatibility)
     const val RICE_CHAR = 'n'

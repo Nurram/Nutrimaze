@@ -346,10 +346,10 @@ class PacmanGame @Inject constructor(
     // ===========================================
     private fun isHealthyFoodTargetMet(): Boolean {
         val pacmanData = pacman.pacmanState.value
-        val targetRice = 4
-        val targetFish = 4
-        val targetVegetable = 4
-        val targetFruit = 3
+        val targetRice = 5
+        val targetFish = 3
+        val targetVegetable = 3
+        val targetFruit = 4
 
         val totalCarbs = pacmanData.totalCarbsEaten
         val totalProtein = pacmanData.totalProteinEaten
@@ -943,10 +943,10 @@ class PacmanGame @Inject constructor(
     // Tambahkan method baru
     private fun isLegacyFoodTargetMet(): Boolean {
         val pacmanData = pacman.pacmanState.value
-        val targetRice = 4
-        val targetFish = 4
-        val targetVegetable = 4
-        val targetFruit = 3
+        val targetRice = 5
+        val targetFish = 3
+        val targetVegetable = 3
+        val targetFruit = 4
 
         val riceOk = pacmanData.riceEaten >= targetRice && pacmanData.riceEaten <= GameConstants.MAX_RICE_PORTION
         val fishOk = pacmanData.fishEaten >= targetFish && pacmanData.fishEaten <= GameConstants.MAX_FISH_PORTION
