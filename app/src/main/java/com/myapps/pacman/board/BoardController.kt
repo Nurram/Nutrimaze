@@ -53,6 +53,7 @@ class BoardController(
         this.currentLevel += 1
         this.currentMap = maps[currentLevel]?.copy()
         this.currentDots = dots[currentLevel]
+        this.pacmanLives = GameConstants.PACMAN_LIVES
         _boardState.value = _boardState.value.copy(
             currentLevel = this.currentLevel,
             gameBoardData = this.currentMap ?: Matrix(0, 0),
