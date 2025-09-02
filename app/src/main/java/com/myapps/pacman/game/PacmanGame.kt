@@ -70,7 +70,7 @@ class PacmanGame @Inject constructor(
     private var waitingForQuiz = false
     private var canProceedToNextLevel = false
     // Maksimal 3 level (0-2)
-    private val MAX_LEVELS = 3
+    private val MAX_LEVELS = 4
     // Tracking food positions for respawn
     // private val ricePositions = mutableListOf<Position>() // Dihapus, diganti FoodSpawnManager
     // private val fishPositions = mutableListOf<Position>() // Dihapus, diganti FoodSpawnManager
@@ -336,13 +336,8 @@ class PacmanGame @Inject constructor(
         }
 
         if (categoryTotal > maxLimit) {
-            pacman.updateHealth(pacman.pacmanState.value.health - 0.5f)
-            gameSoundService.playSound(R.raw.pacman_death)
-            Log.w("PacmanGame", "Exceeded limit for ${GameConstants.getFoodCategory(foodChar)}: $categoryTotal > $maxLimit")
-            if (pacman.pacmanState.value.health <= 0) {
-                handlePacmanHit()
-                return
-            }
+            handlePacmanHit()
+            return
         }
     }
 
@@ -351,10 +346,10 @@ class PacmanGame @Inject constructor(
     // ===========================================
     private fun isHealthyFoodTargetMet(): Boolean {
         val pacmanData = pacman.pacmanState.value
-        val targetRice = 3
-        val targetFish = 2
-        val targetVegetable = 3
-        val targetFruit = 2
+        val targetRice = 4
+        val targetFish = 4
+        val targetVegetable = 4
+        val targetFruit = 3
 
         val totalCarbs = pacmanData.totalCarbsEaten
         val totalProtein = pacmanData.totalProteinEaten
@@ -417,6 +412,11 @@ class PacmanGame @Inject constructor(
                     }
                     val startMillis = System.currentTimeMillis()
                     if (!gameJobIsPaused) {
+                        if (boardController.boardState.value.currentLevel == MAX_LEVELS - 1) {
+                            boardController.updateGameStatus(GameStatus.WON)
+                            break
+                        }
+
                         checkPacmanDeath(movements)
                         clockManagement()
                         checkBellAppear()
@@ -886,12 +886,8 @@ class PacmanGame @Inject constructor(
         pacman.updateRiceEaten(currentRiceEaten)
 
         if (currentRiceEaten > GameConstants.MAX_RICE_PORTION) {
-            pacman.updateHealth(pacman.pacmanState.value.health - 0.5f)
-            gameSoundService.playSound(R.raw.pacman_death)
-            if (pacman.pacmanState.value.health <= 0) {
-                handlePacmanHit()
-                return
-            }
+            handlePacmanHit()
+            return
         }
 
         if (isLegacyFoodTargetMet()) {
@@ -905,12 +901,8 @@ class PacmanGame @Inject constructor(
         pacman.updateFishEaten(currentFishEaten)
 
         if (currentFishEaten > GameConstants.MAX_FISH_PORTION) {
-            pacman.updateHealth(pacman.pacmanState.value.health - 0.5f)
-            gameSoundService.playSound(R.raw.pacman_death)
-            if (pacman.pacmanState.value.health <= 0) {
-                handlePacmanHit()
-                return
-            }
+            handlePacmanHit()
+            return
         }
 
         if (isLegacyFoodTargetMet()) {
@@ -924,12 +916,8 @@ class PacmanGame @Inject constructor(
         pacman.updateVegetableEaten(currentVegetableEaten)
 
         if (currentVegetableEaten > GameConstants.MAX_VEGETABLE_PORTION) {
-            pacman.updateHealth(pacman.pacmanState.value.health - 0.5f)
-            gameSoundService.playSound(R.raw.pacman_death)
-            if (pacman.pacmanState.value.health <= 0) {
-                handlePacmanHit()
-                return
-            }
+            handlePacmanHit()
+            return
         }
 
         if (isLegacyFoodTargetMet()) {
@@ -943,12 +931,8 @@ class PacmanGame @Inject constructor(
         pacman.updateFruitEaten(currentFruitEaten)
 
         if (currentFruitEaten > GameConstants.MAX_FRUIT_PORTION) {
-            pacman.updateHealth(pacman.pacmanState.value.health - 0.5f)
-            gameSoundService.playSound(R.raw.pacman_death)
-            if (pacman.pacmanState.value.health <= 0) {
-                handlePacmanHit()
-                return
-            }
+            handlePacmanHit()
+            return
         }
 
         if (isLegacyFoodTargetMet()) {
@@ -959,10 +943,10 @@ class PacmanGame @Inject constructor(
     // Tambahkan method baru
     private fun isLegacyFoodTargetMet(): Boolean {
         val pacmanData = pacman.pacmanState.value
-        val targetRice = 3
-        val targetFish = 2
-        val targetVegetable = 3
-        val targetFruit = 2
+        val targetRice = 4
+        val targetFish = 4
+        val targetVegetable = 4
+        val targetFruit = 3
 
         val riceOk = pacmanData.riceEaten >= targetRice && pacmanData.riceEaten <= GameConstants.MAX_RICE_PORTION
         val fishOk = pacmanData.fishEaten >= targetFish && pacmanData.fishEaten <= GameConstants.MAX_FISH_PORTION
