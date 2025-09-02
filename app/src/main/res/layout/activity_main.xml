@@ -83,7 +83,7 @@
                         android:id="@+id/riceProgressText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0/4"
+                        android:text="0/5"
                         android:textColor="@color/white"
                         android:textSize="12sp"
                         android:textStyle="bold" />
@@ -94,7 +94,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="5dp"
                         android:layout_marginTop="4dp"
-                        android:max="4"
+                        android:max="5"
                         android:progress="0"
                         android:progressDrawable="@drawable/progress_rice" />
                 </LinearLayout>
@@ -131,7 +131,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="5dp"
                         android:layout_marginTop="4dp"
-                        android:max="4"
+                        android:max="3"
                         android:progress="0"
                         android:progressDrawable="@drawable/progress_fish" />
                 </LinearLayout>
@@ -157,7 +157,7 @@
                         android:id="@+id/vegetableProgressText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0/4"
+                        android:text="0/3"
                         android:textColor="@color/white"
                         android:textSize="12sp"
                         android:textStyle="bold" />
@@ -168,7 +168,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="5dp"
                         android:layout_marginTop="4dp"
-                        android:max="4"
+                        android:max="3"
                         android:progress="0"
                         android:progressDrawable="@drawable/progress_vegetable" />
                 </LinearLayout>
@@ -193,7 +193,7 @@
                         android:id="@+id/fruitProgressText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0/3"
+                        android:text="0/4"
                         android:textColor="@color/white"
                         android:textSize="12sp"
                         android:textStyle="bold" />
@@ -204,7 +204,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="5dp"
                         android:layout_marginTop="4dp"
-                        android:max="3"
+                        android:max="4"
                         android:progress="0"
                         android:progressDrawable="@drawable/progress_fruit" />
                 </LinearLayout>
