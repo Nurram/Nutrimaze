@@ -135,7 +135,7 @@ class PacmanGameViewModel @Inject constructor(
                 // Dipanggil ketika level selesai dan perlu quiz
                 Log.d("PacmanGameViewModel", "ShowQuiz event - current level: $currentLevel")
                 //HERE NO 2
-                if (currentLevel < 3) { // Level 0-2 perlu quiz, level 2 adalah level terakhir
+                if (currentLevel < 4) { // Level 0-2 perlu quiz, level 2 adalah level terakhir
                     _showQuiz.value = currentLevel + 1
                     pendingLevelUp = true
                     Log.d("PacmanGameViewModel", "Quiz triggered for level: ${currentLevel + 1}")
@@ -184,7 +184,7 @@ class PacmanGameViewModel @Inject constructor(
     // Method untuk dipanggil dari PacmanGame ketika level selesai
     fun onLevelCompleted() {
         Log.d("PacmanGameViewModel", "onLevelCompleted called")
-        if (currentLevel < 2) { // Jika bukan level terakhir
+        if (currentLevel < 3) { // Jika bukan level terakhir
             onEvents(PacmanEvents.ShowQuiz)
         }
     }
