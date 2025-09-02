@@ -20,49 +20,48 @@ class QuizActivity : AppCompatActivity() {
         const val RESULT_QUIZ_PASSED = "quiz_passed"
 
         // Bank soal sesuai materi yang diberikan
-        //HERE NO 2
         private val QUESTIONS = mapOf(
             1 to listOf(
                 Question(
-                    "Apa saja komponen yang terdapat dalam Isi Piringku?",
+                    "Dalam sehari, berapa porsi kita harus mengonsumsi lauk pauk (sumber protein)?",
                     listOf(
-                        "Makanan pokok, lauk nabati, sayur, buah, dan susu",
-                        "Makanan pokok, lauk pauk, sayur, dan buah",
-                        "Makanan pokok, lauk hewani, sayur, buah, dan susu"
+                        "3 porsi",
+                        "1 porsi",
+                        "5 porsi"
                     ),
-                    1 // b. Makanan pokok, lauk pauk, sayur, dan buah
+                    0 // b. Makanan pokok, lauk pauk, sayur, dan buah
                 ),
                 Question(
                     "Dari kelompok makanan berikut, mana yang termasuk sumber karbohidrat?",
                     listOf(
                         "Roti, telur, singkong",
-                        "Nasi, ubi, kentang",
+                        "Nasi, ubi jalar, kentang",
                         "Jagung, daging, tempe"
                     ),
                     1 // b. Nasi, ubi, kentang
                 ),
                 Question(
-                    "Dalam satu hari, berapa porsi mengonsumsi makanan pokok (sumber karbohidrat)?",
-                    listOf(
-                        "4 porsi sehari",
-                        "2 porsi sehari",
-                        "1 porsi sehari"
-                    ),
-                    0 // b
-                ),
-                Question(
-                    "Dibawah ini yang termasuk ke dalam junk food adalah…",
+                    "Dibawah ini yang termasuk ke dalam junk food adalah...",
                     listOf(
                         "Ayam, burger, kentang",
                         "Donat, ikan, tempe",
-                        "Keripik, donat, minuman manis"
+                        "Keripik olahan, donat, minuman manis"
                     ),
                     2 // b
+                ),
+                Question(
+                    "Dalam sehari, berapa porsi kita harus mengonsumsi buah-buahan?",
+                    listOf(
+                        "4 porsi",
+                        "3 porsi",
+                        "1 porsi"
+                    ),
+                    0 // b
                 ),
             ),
             2 to listOf(
                 Question(
-                    "Yang termasuk sumber protein hewani adalah…",
+                    "Di bawah ini yang termasuk sumber protein hewani adalah…",
                     listOf(
                         "Ikan dan ayam",
                         "Ikan dan tahu",
@@ -71,93 +70,93 @@ class QuizActivity : AppCompatActivity() {
                     0 // c.
                 ),
                 Question(
-                    "Yang termasuk sumber protein nabati adalah …",
+                    "Dalam sehari, berapa porsi kita harus mengonsumsi sayuran?",
+                    listOf(
+                        "2 porsi",
+                        "3 porsi",
+                        "5 porsi"
+                    ),
+                    1 // a.
+                ),
+                Question(
+                    "Membatasi konsumsi junk food merupakan salah satu upaya untuk mengurangi asupan...",
+                    listOf(
+                        "Vitamin dan minera",
+                        "Karbohidrat dan protein",
+                        "Gula, garam, dan lemak"
+                    ),
+                    2 // b.
+                ),
+            ),
+            3 to listOf(
+                Question(
+                    "Dalam sehari, berapa porsi kita harus mengonsumsi makanan pokok (sumber karbohidrat)?",
+                    listOf(
+                        "1 ½  – 3 ½ porsi",
+                        "2 ½  – 4 ½  porsi",
+                        "4 ½  – 6 ½ porsi"
+                    ),
+                    2 // b.
+                ),
+                Question(
+                    "Di bawah ini, yang termasuk ke dalam sumber protein nabati adalah...",
                     listOf(
                         "Ikan",
                         "Tempe",
                         "Ayam"
                     ),
-                    1 // a.
+                    1 // c.
                 ),
                 Question(
-                    "Dalam satu hari, berapa porsi mengonsumsi lauk pauk (sumber protein)?",
+                    "Tumpeng Gizi Seimbang terdiri dari 4 pilar, yaitu …",
                     listOf(
-                        "4 porsi sehari",
-                        "1 porsi sehari",
-                        "5 porsi sehari"
-                    ),
-                    0 // b.
-                ),
-            ),
-            3 to listOf(
-                Question(
-                    "Dalam satu hari, berapa porsi mengonsumsi sayuran?",
-                    listOf(
-                        "2 porsi sehari",
-                        "4 porsi sehari",
-                        "5 porsi sehari"
-                    ),
-                    1 // b.
-                ),
-                Question(
-                    "Dalam sehari, berapa porsi mengonsumsi buah-buahan?",
-                    listOf(
-                        "1 porsi sehari",
-                        "4 porsi sehari",
-                        "3 porsi sehari"
-                    ),
-                    2 // c.
-                ),
-                Question(
-                    "Dibawah ini yang tidak termasuk ke dalam junk food adalah …",
-                    listOf(
-                        "Burger dan keripik",
-                        "Ikan dan kentang",
-                        "Donat dan minuman manis"
+                        "Pola makan teratur, faktor ekonomi, tingkat pendidikan, dan ketersediaan pangan di lingkungan sekitar",
+                        "Konsumsi beranekaragam pangan, kebersihan diri, aktivitas fisik, dan pemantauan berat badan",
+                        "Konsumsi beranekaragam pangan, pola tidur teratur, aktivitas fisik, dan pemeriksaan kesehatan rutin setiap bulan"
                     ),
                     1 // a.
                 ),
             ),
-            4 to listOf(
-                Question(
-                    "Dalam sehari, sebaiknya maksimal berapa kali mengonsumsi sayur?",
-                    listOf(
-                        "3 kali sehari",
-                        "4 kali sehari",
-                        "5 kali sehari"
-                    ),
-                    1 // b. 4 kali sehari (3-4 porsi)
-                ),
-                Question(
-                    "Dalam sehari, sebaiknya maksimal berapa kali mengonsumsi buah?",
-                    listOf(
-                        "1 kali sehari",
-                        "2 kali sehari",
-                        "3 kali sehari"
-                    ),
-                    2 // c. 3 kali sehari (2-3 porsi)
-                )
-            ),
-            5 to listOf(
-                Question(
-                    "Dibawah ini yang termasuk ke dalam junkfood adalah…",
-                    listOf(
-                        "Telur",
-                        "Burger",
-                        "Tempe"
-                    ),
-                    1 // b. Burger
-                ),
-                Question(
-                    "Dibawah ini yang tidak termasuk ke dalam junkfood adalah …",
-                    listOf(
-                        "Telur",
-                        "Gorengan",
-                        "Burger"
-                    ),
-                    0 // a. Telur
-                )
-            )
+//            4 to listOf(
+//                Question(
+//                    "Dalam sehari, sebaiknya maksimal berapa kali mengonsumsi sayur?",
+//                    listOf(
+//                        "3 kali sehari",
+//                        "4 kali sehari",
+//                        "5 kali sehari"
+//                    ),
+//                    1 // b. 4 kali sehari (3-4 porsi)
+//                ),
+//                Question(
+//                    "Dalam sehari, sebaiknya maksimal berapa kali mengonsumsi buah?",
+//                    listOf(
+//                        "1 kali sehari",
+//                        "2 kali sehari",
+//                        "3 kali sehari"
+//                    ),
+//                    2 // c. 3 kali sehari (2-3 porsi)
+//                )
+//            ),
+//            5 to listOf(
+//                Question(
+//                    "Dibawah ini yang termasuk ke dalam junkfood adalah…",
+//                    listOf(
+//                        "Telur",
+//                        "Burger",
+//                        "Tempe"
+//                    ),
+//                    1 // b. Burger
+//                ),
+//                Question(
+//                    "Dibawah ini yang tidak termasuk ke dalam junkfood adalah …",
+//                    listOf(
+//                        "Telur",
+//                        "Gorengan",
+//                        "Burger"
+//                    ),
+//                    0 // a. Telur
+//                )
+//            )
         )
     }
 
