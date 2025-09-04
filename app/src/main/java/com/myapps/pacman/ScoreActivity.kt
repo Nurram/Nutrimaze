@@ -198,13 +198,13 @@ class ScoreActivity : AppCompatActivity() {
                 "🏆 LUAR BIASA! Kamu berhasil menerapkan prinsip Isi Piringku dengan sempurna! Variasi makanan sangat baik dan porsi seimbang!"
 
             won && excessFoods.isEmpty() && targetMet ->
-                "HEBAT\uD83D\uDC4F Kamu menang dengan pola makan seimbang sesuai dengan Isi Piringku! Porsi semua kategori makanan sudah tepat : Makanan pokok (4), Lauk pauk (4), Sayuran (4) dan Buah-buahan (3)"
+                "HEBAT \uD83D\uDC4F Kamu menang dengan pola makan seimbang sesuai dengan Isi Piringku! Porsi semua kategori makanan sudah tepat : Makanan pokok (5), Lauk pauk (3), Sayuran (3) dan Buah-buahan (4)"
 
             won && excessFoods.isNotEmpty() ->
                 "🎊 Selamat menang! Tapi perhatikan konsumsi berlebihan: ${excessFoods.joinToString(", ")}. Ingat batasan Isi Piringku ya!"
 
             excessFoods.isNotEmpty() ->
-                "\uD83D\uDD04COBA LAGI!  Hindari konsumsi makanan berlebih dan ikuti panduan Isi Piringku untuk hidup sehat: Makanan pokok (4), Lauk pauk (4), Sayuran (4), dan Buah-buahan (3)"
+                "\uD83D\uDD04COBA LAGI! Hindari konsumsi makanan berlebih dan ikuti panduan Isi Piringku untuk hidup sehat: Makanan pokok (5), Lauk pauk (3), Sayuran (3) dan Buah-buahan (4)"
 
             !targetMet ->
                 "🎯 Coba lagi! Konsumsi makanan sesuai target: Karbohidrat (3), Protein (2), Sayuran (3), Buah (2)"

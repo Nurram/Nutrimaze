@@ -1,6 +1,6 @@
 <resources>
     <!-- App Info -->
-    <string name="app_name">Health Pac-Man</string>
+    <string name="app_name">NutriMaze – Man</string>
 
     <!-- Button Texts -->
     <string name="use_direction_buttons">Gunakan Tombol Arah</string>
@@ -22,7 +22,7 @@
     <string name="kembali_ke_menu">Kembali ke Menu</string>
 
     <!-- Isi Piringku Content - Updated dengan Dynamic System -->
-    <string name="isi_piringku_title">Isi Piringku - Sistem Makanan Dinamis</string>
+    <string name="isi_piringku_title">Tumpeng Gizi Seimbang</string>
     <string name="isi_piring_intro">"Isi Piringku" adalah pedoman yang dikembangkan oleh Kementerian Kesehatan untuk mendorong masyarakat mengonsumsi makanan sesuai prinsip gizi seimbang. Dalam game ini, setiap level memiliki variasi makanan yang berbeda untuk memberikan edukasi yang lebih kaya tentang keanekaragaman pangan Indonesia.</string>
 
     <!-- Makanan Pokok - Dynamic System -->
