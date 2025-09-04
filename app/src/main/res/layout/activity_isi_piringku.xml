@@ -70,7 +70,7 @@
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/gambar_4"
+                android:src="@drawable/gambar_5"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/premium_control_background"
                 android:padding="14dp" />
@@ -80,7 +80,7 @@
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/gambar_5"
+                android:src="@drawable/gambar_4"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/premium_control_background"
                 android:padding="14dp" />
@@ -131,6 +131,16 @@
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
                 android:src="@drawable/gambar_10"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/premium_control_background"
+                android:padding="14dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gambar_11"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/premium_control_background"
                 android:padding="14dp" />
